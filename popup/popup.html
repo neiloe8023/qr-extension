@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+  <script src="../lib/qrcode.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-left">
+        <img src="../icons/icon48.png" class="header-icon" alt="logo">
+        <h1 class="header-title">网页二维码</h1>
+      </div>
+      <a href="#" id="githubButton" class="github-badge">
+        <img src="https://img.shields.io/badge/GitHub-black?logo=github&style=flat-square" alt="GitHub">
+      </a>
+    </div>
+    
+    <div class="qr-wrapper">
+      <div id="qrcode"></div>
+      <img id="favicon" class="favicon" src="" alt="favicon">
+    </div>
+    
+    <div class="site-info">
+      <h2 id="site-name"></h2>
+    </div>
+    
+    <div class="footer">
+      <span class="tips">扫描二维码即可访问当前网页</span>
+      <button class="share-button" id="shareButton">分享链接</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
